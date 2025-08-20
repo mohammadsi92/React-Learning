@@ -13,15 +13,24 @@ class Time extends React.Component
     return <h1>Current Time: {new Date().toLocaleTimeString()}</h1>;
   } 
 }
+class Hello extends React.Component
+{
+  render()
+  {
+    return <h1>Hello Mohammad</h1>;
+  } 
+}
 
 class App extends React.Component
 {
   render()
   {
-    return <div>
+    return (
+      <div>
       <h1>My First React App</h1>
-      <Time />
-    </div>;
+        <Time />
+        <Hello />
+    </div>);
   }
 }
 createRoot(document.getElementById('mydiv')).render(<App />);
