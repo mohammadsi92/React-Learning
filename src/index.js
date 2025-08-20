@@ -24,4 +24,4 @@ class App extends React.Component
     </div>;
   }
 }
-createRoot(document.getElementById('root')).render(<App />);
+createRoot(document.getElementById('mydiv')).render(<App />);
