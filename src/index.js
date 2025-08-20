@@ -33,4 +33,11 @@ class App extends React.Component
     </div>);
   }
 }
-createRoot(document.getElementById('mydiv')).render(<App />);
+//createRoot(document.getElementById('mydiv')).render(<App />);
+
+const tick = createRoot(document.getElementById('mydiv'));
+
+setInterval(() => {
+  tick.render(<App />);
+}, 1000);
+
