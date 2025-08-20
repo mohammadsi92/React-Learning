@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-
+import './style.css'
 
 //My first code in  react js
 createRoot(document.getElementById('root')).render(<h1>Hello World</h1>);
@@ -10,7 +10,7 @@ class Time extends React.Component
 {
   render()
   {
-    return <h1>Current Time: {new Date().toLocaleTimeString()}</h1>;
+    return <h1 className='timer'>Current Time: {new Date().toLocaleTimeString()}</h1>;
   } 
 }
 class Hello extends React.Component
@@ -26,7 +26,7 @@ class App extends React.Component
   render()
   {
     return (
-      <div>
+      <div className='main'>
       <h1>My First React App</h1>
         <Time />
         <Hello />
