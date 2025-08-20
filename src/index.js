@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 
 
 //My first code in  react js
-createRoot.render(<h1>Hello, world!</h1>, document.getElementById('root'));
+createRoot(document.getElementById('root')).render(<h1>Hello World</h1>);
 
 // Now i want mack a Component
 class Time extends React.Component
@@ -24,4 +24,4 @@ class App extends React.Component
     </div>;
   }
 }
-createRoot.render(<App />, document.getElementById('root'));
+createRoot(document.getElementById('root')).render(<App />);
